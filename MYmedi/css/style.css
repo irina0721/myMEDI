@@ -1,0 +1,244 @@
+@font-face{
+    font-family: "CircularStd-Black";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/font/CircularStd-Black.woff2"),
+    url("/font/CircularStd-Black.woff");
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul,
+li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: inherit;
+    font-size: inherit;
+    margin-bottom: 0;
+}
+html,
+body{
+    height: 100%;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #1B0A42;
+}
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    max-width: 1452px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+.header{
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+/* ........HEADER.............. */
+.header__container{
+    display: flex;
+    min-height: 120px;
+    justify-content: space-between;
+}
+.header__logo {
+    font-family: "CircularStd-Black", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+    color: #0A1B32;
+}
+.header__menu {
+    margin: 0 0 0 97.5px;
+}
+@media(max-width:992px){
+    .header__menu {
+        margin: 0 0 0 50px;
+    }
+}
+@media(max-width:767px){
+    .header__menu {
+        margin: 0 0 0 20px;
+    }
+}
+.menu {
+    padding: 48px 0;
+}
+.menu__list {
+    flex-wrap: wrap;
+    display: flex;
+}
+.menu__item:not(:last-child) {
+    margin: 0 38px 0 0;
+}
+.menu__link {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1B0A42;
+}
+.menu__link:hover{
+    text-decoration: underline;
+}
+.menu__button {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1B0A42;
+    border-radius: 6px;
+    padding: 17px 31px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.menu__button:hover{
+    background: #4F56F1;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+.header__menu__list,
+.header__menu__button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width:661px){
+    .header__container,
+    .header__menu__list{
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+    }
+    .header__menu__button{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .menu {
+        padding: 20px 0;
+    }
+}
+/* .......PAGE................. */
+.page {
+    padding: 100px 10px 100px 100px;
+}
+.page__main-block {
+    display: flex;
+}
+.main-block {
+}
+.container {
+}
+.main-block__body {
+    flex: 1 1 auto;
+    padding: 0 0 0 30px;
+
+}
+.main-block__title {
+    font-family: Ramaraja;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 80px;
+    letter-spacing: -0.02em;
+    color: #1B0A42;
+    margin-bottom: 10px;
+}
+.main-block__title h1{
+    margin-bottom: 0;
+}
+@media(max-width:1020px){
+    .page {
+        padding: 0;
+    }
+    .page__main-block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+  .main-block__image {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 140px;
+}
+.main-block__body {
+    text-align: center;
+ }
+}
+.main-block__text {
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #9A9A9A;
+}
+.main-block__button {
+    display:inline-block;
+    max-width: 152px;
+    max-height: 63.82px;
+    background: #4F56F1;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height:32px;
+    text-align: center;
+    cursor: pointer;
+    padding: 17px 31px;
+    margin-top: 50px;
+    color: #fff;
+}
+.main-block__button:hover{
+    background:  #131eec;
+    transition: background 0.2s ease;
+}
+.main-block__image {
+    flex: 1 1 100%;
+   width: 653px;
+   height: 650px;
+}
+.main-block__image-block {
+    width: 100%;
+    height: auto;
+}
+@media(max-width:670px){
+    .main-block__image {
+        display:none
+}
+.page {
+    padding-bottom: 40px;
+}
+.main-block__title {
+    font-size: 28px;
+    line-height: 50px;
+}
+.main-block__text {
+    line-height: 32px;
+   font-size: 16px;
+}
+
+}
